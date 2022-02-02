@@ -1,0 +1,34 @@
+<div class="login-in">
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title">Log in</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="md-form">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <div class="email-input">
+                            <input type="email" id="defaultForm-email" class="form-control validate" placeholder="E-mailadres">
+                        </div>
+                    </div>
+                    <div class="md-form">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <div class="password-input">
+                            <input type="password" id="defaultForm-pass" class="form-control validate" placeholder="Wachtwoord">
+                        </div>
+                    </div>
+                    <button class="btn btn-default btn-soccer-green login">Inloggen</button>
+                    <a href="#" class="password-forgotten" data-toggle="modal" data-target="#modalForgottenPasswordForm">Wachtwoord vergeten?</a>
+                </div>
+                <div class="modal-footer">
+                    <p>Nog geen account?<a href="#" class="create-account"data-toggle="modal" data-target="#modalCreateAccountForm"> Maak er een aan</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

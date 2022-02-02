@@ -1,0 +1,26 @@
+.login {
+    &-form {
+        form {
+            .login-btn {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .password-forgotten {
+                    margin-bottom: 15px;
+                    color: $soccer-green;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    &-footer {
+        .register {
+            color: $soccer-green;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

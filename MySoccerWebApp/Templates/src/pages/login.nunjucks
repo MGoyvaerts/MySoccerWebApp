@@ -1,0 +1,43 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+
+    <div class="login">
+        {% include 'widgets/banner.nunjucks' %}
+
+        <section class="login-form">
+            <div class="container">
+                <div class="login-header">
+                    <h4>Log in</h4>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 form-group">
+                            <label for="Email">E-mailadres*</label>
+                            <input class="form-control" data-val="true" data-val-length="Gelieve je e-mailadres in te geven" data-val-length-max="50" data-val-required="Gelieve je mailadres in te geven" id="Email" name="Email" placeholder="E-mailadres" type="email" value="">
+                            <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 form-group">
+                            <label for="Password">Wachtwoord*</label>
+                            <input class="form-control validate" data-val="true" data-val-length="Gelieve je wachtwoord in te geven" data-val-length-max="20" data-val-required="Gelieve je wachtwoord in te geven" id="Password" name="Password" placeholder="Wachtwoord" type="password">
+                            <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 form-group login-btn">
+                            <a href="passwordForgotten.html" class="password-forgotten">Wachtwoord vergeten?</a>
+                            <button type="submit" class="btn btn-primary btn-soccer-green login">Inloggen</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="login-footer">
+                    <p>Nog geen account? <a class="register" href="Register.html">Registreer hier</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

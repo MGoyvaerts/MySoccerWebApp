@@ -1,0 +1,24 @@
+section {
+    .half-width {
+        max-width: 75%;
+        @include media-breakpoint-down(md) {
+            max-width: 100%;
+        }
+    }
+    &.banner,
+    &.intro,
+    &.rankings {
+        margin-bottom: 45px;
+    }
+
+    .rankings {
+        &-item {
+            margin-bottom: 45px;
+        }
+        &-header{
+            h2{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

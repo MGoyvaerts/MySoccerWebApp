@@ -1,0 +1,112 @@
+﻿@using MySoccerWebApp.Core.Dto.Users
+@model MySoccerWebApp.Core.ViewModels.HomeViewModel
+
+<div class="home">
+    <section class="banner">
+        <div class="banner-image small">
+            <figure style="background-image:url('assets/images/banner-home.jpg')"></figure>
+        </div>
+    </section>
+    @if (Model.User == null || !Model.User.LoggedIn)
+    {
+        <section class="intro">
+            <div class="container">
+                <div class="row half-width">
+                    <div class="col-12">
+                        <h1>@Resources.Content.Welcome</h1>
+                        <p>@Resources.Content.HomeIntro</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rankings">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="rankings-intro">
+                            <h1>@Resources.Content.Classifications</h1>
+                            <p>@Resources.Content.ClassificationsSubTtitle</p>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Pro League</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                <div class="ranking">
+                                    <div class="ranking-title">
+                                        <h3>3e Provinciale A</h3>
+                                    </div>
+                                    <div class="ranking-table">
+                                        <div class="ranking-table-row ranking-table-header">
+                                            <div class="ranking-table-row-cell">
+                                                <p>Team</p>
+                                            </div>
+                                            <div class="ranking-table-row-cell">
+                                                <p>P</p>
+                                            </div>
+                                            <div class="ranking-table-row-cell">
+                                                <p>M</p>
+                                            </div>
+                                            <div class="ranking-table-row-cell">
+                                                <p>W</p>
+                                            </div>
+                                            <div class="ranking-table-row-cell">
+                                                <p>G</p>
+                                            </div>
+                                            <div class="ranking-table-row-cell">
+                                                <p>V</p>
+                                            </div>
+                                            <div class="ranking-table-row-cell">
+                                                <p>+</p>
+                                            </div>
+                                            <div class="ranking-table-row-cell">
+                                                <p>-</p>
+                                            </div>
+                                            <div class="ranking-table-row-cell">
+                                                <p>+/-</p>
+                                            </div>
+                                        </div>
+                                        @foreach (var club in Model.Clubs)
+                                        {
+                                            <div class="ranking-table-row">
+                                                <div class="ranking-table-row-cell">
+                                                    <p>@club.ClubName</p>
+                                                </div>
+                                                <div class="ranking-table-row-cell">
+                                                    <p>@club.TotalPoints</p>
+                                                </div>
+                                                <div class="ranking-table-row-cell">
+                                                    <p>@club.MatchesPlayed</p>
+                                                </div>
+                                                <div class="ranking-table-row-cell">
+                                                    <p>@club.GamesWon</p>
+                                                </div>
+                                                <div class="ranking-table-row-cell">
+                                                    <p>@club.GamesDraw</p>
+                                                </div>
+                                                <div class="ranking-table-row-cell">
+                                                    <p>@club.GamesLost</p>
+                                                </div>
+                                                <div class="ranking-table-row-cell">
+                                                    <p>@club.GoalsScored</p>
+                                                </div>
+                                                <div class="ranking-table-row-cell">
+                                                    <p>@club.GoalsConceeded</p>
+                                                </div>
+                                                <div class="ranking-table-row-cell">
+                                                    <p>@club.GoalsConceeded</p>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+    else { }
+</div>

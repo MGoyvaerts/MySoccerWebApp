@@ -1,0 +1,62 @@
+﻿@using MySoccerWebApp.Core.Dto.Users
+@model RegisterUserDto
+
+<div class="register">
+    <section class="banner">
+        <div class="banner-image small">
+            <figure style="background-image:url('assets/images/banner-home.jpg')"></figure>
+        </div>
+    </section>
+
+    <section class="register-form">
+        <div class="container">
+            <div class="register-form-header">
+                <h4>@Resources.Content.Register</h4>
+            </div>
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 form-group">
+                        @Html.LabelFor(x => x.Firstname, Resources.Content.FirstnameLblRequired)
+                        @Html.TextBoxFor(x => x.Firstname, htmlAttributes: new { @class = "form-control", @placeholder = Resources.Content.FirstnameLbl, @type = "text" })
+                        @Html.ValidationMessageFor(x => x.Firstname, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 form-group">
+                        @Html.LabelFor(x => x.Lastname, Resources.Content.LastnameLblRequired)
+                        @Html.TextBoxFor(x => x.Lastname, htmlAttributes: new { @class = "form-control", @placeholder = Resources.Content.LastnameLbl, @type = "text" })
+                        @Html.ValidationMessageFor(x => x.Lastname, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 form-group">
+                        @Html.LabelFor(x => x.Email, Resources.Content.EmailaddressLblRequired)
+                        @Html.TextBoxFor(x => x.Email, htmlAttributes: new { @class = "form-control", @placeholder = Resources.Content.EmailaddressLbl, @type = "email" })
+                        @Html.ValidationMessageFor(a => a.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 form-group">
+                        @Html.LabelFor(x => x.Password, Resources.Content.PasswordLblRequired)
+                        @Html.PasswordFor(x => x.Password, htmlAttributes: new { @class = "form-control validate", @placeholder = Resources.Content.PasswordLbl })
+                        @Html.ValidationMessageFor(a => a.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 form-group">
+                        @Html.LabelFor(x => x.PasswordConfirmation, Resources.Content.ConfirmPasswordLblRequired)
+                        @Html.PasswordFor(x => x.PasswordConfirmation, htmlAttributes: new { @class = "form-control validate", @placeholder = Resources.Content.ConfirmPasswordLbl })
+                        @Html.ValidationMessageFor(a => a.PasswordConfirmation, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 form-group">
+                        <button type="submit" class="btn btn-primary btn-soccer-green register">@Resources.Content.RegisterBtn</button>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+</div>

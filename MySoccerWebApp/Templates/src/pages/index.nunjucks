@@ -1,0 +1,104 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+    <div class="home">
+        {% include 'widgets/banner.nunjucks' %}
+        
+        <section class="intro">
+            <div class="container">
+                <div class="row half-width">
+                    <div class="col-12">
+                        <h1>Welkom</h1>
+                        <p>Ben jij voetbal minded en ben je graag op de hoogte over de stand van zaken van je favoriete ploeg? Dan ben je hier op de juiste plaats. Van nationaal tot provinciaal voetbal, over alle voetbalreeksen van Vlaanderen. Hier vind je alle uitslagen en klassementen van je favoriete club.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rankings">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="rankings-intro">
+                            <h1>Klassementen</h1>
+                            <p>Hieronder kan je de rangschikking vinden per afdeling of provincie.</p>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Pro League</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Nationaal</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Limburg</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Antwerpen</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Vlaams-Brabant</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Oos-Vlaanderen</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>West-Vlaanderen</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                                {% include 'widgets/ranking.nunjucks' %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

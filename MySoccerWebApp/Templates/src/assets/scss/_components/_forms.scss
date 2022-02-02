@@ -1,0 +1,11 @@
+form {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        &:active,
+        &:focus {
+            border-color: $soccer-green;
+            box-shadow: 0 0 10px 5px rgba(23 143 29 / 10%);
+        }
+    }
+}

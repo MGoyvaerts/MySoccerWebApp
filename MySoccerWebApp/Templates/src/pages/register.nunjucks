@@ -1,0 +1,59 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+
+    <div class="register">
+        {% include 'widgets/banner.nunjucks' %}
+
+        <section class="register-form">
+            <div class="container">
+                <div class="register-form-header">
+                    <h4>Registreer</h4>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 form-group">
+                            <label for="Firstname">Voornaam*</label>
+                            <input class="input-validation-error form-control" data-val="true" data-val-length="Gelieve je voornaam in te geven" data-val-length-max="50" data-val-required="Gelieve je voornaam in te geven" id="Firstname" name="Firstname" placeholder="Voornaam" type="text" value="">
+                            <span class="field-validation-error text-danger" data-valmsg-for="Firstname" data-valmsg-replace="true">Gelieve je voornaam in te geven</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 form-group">
+                            <label for="Lastname">Naam*</label>
+                            <input class="input-validation-error form-control" data-val="true" data-val-length="Gelieve je naam in te geven" data-val-length-max="50" data-val-required="Gelieve je naam in te geven" id="Lastname" name="Lastname" placeholder="Naam" type="text" value="">
+                            <span class="field-validation-error text-danger" data-valmsg-for="Lastname" data-valmsg-replace="true">Gelieve je naam in te geven</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 form-group">
+                            <label for="Email">E-mailadres*</label>
+                            <input class="input-validation-error form-control" data-val="true" data-val-length="Gelieve je e-mailadres in te geven" data-val-length-max="50" data-val-required="Gelieve je mailadres in te geven" id="Email" name="Email" placeholder="E-mailadres" type="email" value="">
+                            <span class="field-validation-error text-danger" data-valmsg-for="Email" data-valmsg-replace="true">Gelieve je mailadres in te geven</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 form-group">
+                            <label for="Password">Wachtwoord*</label>
+                            <input class="input-validation-error form-control" data-val="true" data-val-length="Gelieve je wachtwoord in te geven" data-val-length-max="20" data-val-required="Gelieve je wachtwoord in te geven" id="Password" name="Password" placeholder="Wachtwoord" type="password">
+                            <span class="field-validation-error text-danger" data-valmsg-for="Password" data-valmsg-replace="true">Gelieve je wachtwoord in te geven</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 form-group">
+                            <label for="PasswordConfirmation">Wachtwoord bevestigen*</label>
+                            <input confirmpasswordlbl="Wachtwoord bevestigen" class="input-validation-error form-control validate" data-val="true" data-val-length="Gelieve je wachtwoord te bevestigen" data-val-length-max="20" data-val-required="Gelieve je wachtwoord te bevestigen" id="PasswordConfirmation" name="PasswordConfirmation" type="password">
+                            <span class="field-validation-error text-danger" data-valmsg-for="PasswordConfirmation" data-valmsg-replace="true">Gelieve je wachtwoord te bevestigen</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 form-group">
+                            <button type="submit" class="btn btn-primary btn-soccer-green register">Verzenden</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

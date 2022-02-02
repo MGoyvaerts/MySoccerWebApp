@@ -1,0 +1,37 @@
+// Alternate buttons
+// --------------------------------------------------
+.btn {
+  border-radius: 0;
+  color: $color-black;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 10px;
+  cursor: pointer;
+  &.btn-primary {
+    &:active,
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  &.btn-primary {
+    &.btn-soccer-green {
+      border-color: $soccer-green;
+      background-color: $soccer-green;
+      color: $color-white;
+      &:hover {
+        background-color: $color-white;
+        color: $soccer-green;
+        border-color: $soccer-green;
+      }
+      &:focus,
+      &:active {
+        box-shadow: none;
+        outline: none;
+        background-color: $color-white;
+        color: $soccer-green;
+        border-color: $soccer-green;
+      }
+    }
+  }
+}

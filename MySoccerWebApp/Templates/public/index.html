@@ -1,0 +1,5503 @@
+<html lang="en">
+    <head>
+        <title>My soccer web app</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.min.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+        <script src="assets/js/scripts.min.js"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d94a73693518ada"></script>
+    </head>
+    <body>
+        <header class="header">
+    <nav class="navbar navbar-expand-lg main-nav">
+        <div class="navbar-logo mobile">
+            <a href="#">My soccer webb app</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="navbar-collapse collapse" id="main-menu">
+            <div class="navbar-top">
+                <div class="navbar-logo desktop">
+                    <a href="#">My soccer webb app</a>
+                </div>
+                
+                <ul class="navbar-top__list session-activated">
+                    <li class="navbar-top__list__item">
+                        <i class="far fa-user"></i>
+                        <a class="navbar-top__list__item__link" href="settings.html">Michiel</a>
+                    </li>
+                    <li class="navbar-top__list__item">
+                        <a class="navbar-top__list__item__link" href="index.html">Uitloggen</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-bottom">
+                <ul class="navbar-bottom__list">
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pro League</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1A</a>
+                            <a class="dropdown-item" href="#">1B</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nationaal</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Amateur</a>
+                            <a class="dropdown-item" href="#">2e Amateur A</a>
+                            <a class="dropdown-item" href="#">2e Amateur B</a>
+                            <a class="dropdown-item" href="#">3e Amateur A</a>
+                            <a class="dropdown-item" href="#">3e Amateur B</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limburg</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Provinciaal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">2e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal B</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">3e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal C</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">4e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal D</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Antwerpen</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Provinciaal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">2e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal B</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">3e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal C</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">4e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal D</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal E</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal F</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vlaams-Brabant</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Provinciaal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">2e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal B</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">3e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal D</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">4e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal D</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal E</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal F</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal G</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oost-Vlaanderen</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Provinciaal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">2e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal C</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">3e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal D</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal E</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">4e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal D</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal E</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal F</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">West-Vlaanderen</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Provinciaal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">2e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal B</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">3e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal C</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">4e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal D</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+        <main class="content-wrapper">
+            
+    <div class="home">
+        <section class="banner">
+    <div class="banner-image small">
+        <figure style="background-image:url('assets/images/banner-home.jpg')"></figure>
+    </div>
+</section>
+        
+        <section class="intro">
+            <div class="container">
+                <div class="row half-width">
+                    <div class="col-12">
+                        <h1>Welkom</h1>
+                        <p>Ben jij voetbal minded en ben je graag op de hoogte over de stand van zaken van je favoriete ploeg? Dan ben je hier op de juiste plaats. Van nationaal tot provinciaal voetbal, over alle voetbalreeksen van Vlaanderen. Hier vind je alle uitslagen en klassementen van je favoriete club.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rankings">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="rankings-intro">
+                            <h1>Klassementen</h1>
+                            <p>Hieronder kan je de rangschikking vinden per afdeling of provincie.</p>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Pro League</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Nationaal</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Limburg</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Antwerpen</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Vlaams-Brabant</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>Oos-Vlaanderen</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <div class="rankings-item">
+                            <div class="rankings-header">
+                                <h2>West-Vlaanderen</h2>
+                            </div>
+                            <div class="owl-carousel owl-carousel__ranking">
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                                <div class="ranking">
+    <div class="ranking-title">
+        <h3>3e Provinciale A</h3>
+    </div>
+    <div class="ranking-table">
+        <div class="ranking-table-row ranking-table-header">
+            <div class="ranking-table-row-cell">
+                <p>Team</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>P</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>M</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>W</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>G</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>-</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>+/-</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.F.C. Diepenbeek</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>34</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>11</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>41</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>27</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K.M.R Biesen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>38</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>20</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Membruggen V&V</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>30</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>9</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>2</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>31</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>18</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>S.K. Musterbilzen</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>25</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>8</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>5</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>33</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>12</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>Eendracht Mechelen A/D Maas</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>14</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>7</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>1</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>29</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>19</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>10</p>
+            </div>
+        </div>
+        <div class="ranking-table-row">
+            <div class="ranking-table-row-cell">
+                <p>K. Lanaken V.V.</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>21</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>13</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>3</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>4</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>28</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>22</p>
+            </div>
+            <div class="ranking-table-row-cell">
+                <p>6</p>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        </main>
+
+        <footer class="footer">
+</footer>
+    </body>
+</html>

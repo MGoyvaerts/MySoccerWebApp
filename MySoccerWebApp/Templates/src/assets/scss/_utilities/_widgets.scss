@@ -1,0 +1,83 @@
+/***************************************
+*                Banner                *
+****************************************/
+.banner {
+    position: relative;
+    &-image {
+        figure {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0;
+        }
+        &.small {
+            height: 300px;
+        }
+        &.large {
+            height: 500px;
+        }
+    }
+}
+
+/****************************************
+*                Ranking                *
+*****************************************/
+.ranking {
+    &-title{
+        h3{
+            font-size: 1.25rem;
+        }
+    }
+    &-table {
+        display: flex;
+        flex-direction: column;
+        &-header {
+            .ranking-table-row-cell {
+                font-weight: 600;
+                background-color: $soccer-ligth-grey;
+                border-top: 2px solid;
+            }
+        }
+        &-row {
+            display: flex;
+            &:last-child{
+                .ranking-table-row-cell {
+                border-bottom: 2px solid;
+                }
+            }
+            &:nth-child(even) {
+                .ranking-table-row-cell {
+                    background-color: $soccer-green;
+                }
+            }
+            &-cell {
+                padding: 3px 5px;
+                width: 30px;
+                text-align: center;
+                border: 1px solid;
+                @include media-breakpoint-down(md) {
+                    display: flex;
+                    flex-grow: 1;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:first-child {
+                    width: 15vw;
+                    text-align: left;
+                    border-left: 2px solid;
+                    @include media-breakpoint-down(md) {
+                        justify-content: flex-start;
+                    }
+                }
+                &:last-child{
+                    border-right: 2px solid;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

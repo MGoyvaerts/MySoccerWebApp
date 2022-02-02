@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/Templates/public/assets/css/styles.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    @*<script src="~/Templates/public/assets/js/scripts.min.js"></script>*@
+    @*@Styles.Render("~/bundles/layoutCss")*@
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("styles", required: false)
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            @Html.Action("Header", "Home")
+        </div>
+    </header>
+    <main class="content-wrapper">
+        @RenderBody()
+    </main>
+    @Html.Action("Footer", "Home")
+
+    @Scripts.Render("~/bundles/layoutJs")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

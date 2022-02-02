@@ -1,0 +1,22 @@
+<html lang="en">
+    <head>
+        <title>My soccer web app</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.min.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+        <script src="assets/js/scripts.min.js"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d94a73693518ada"></script>
+    </head>
+    <body>
+        {% include 'partials/header.nunjucks' %}
+
+        <main class="content-wrapper">
+            {% block content %}{% endblock %}
+        </main>
+
+        {% include 'partials/footer.nunjucks' %}
+    </body>
+</html>

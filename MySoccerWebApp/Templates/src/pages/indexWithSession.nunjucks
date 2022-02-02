@@ -1,0 +1,9 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+
+<div class="">
+    {% include 'widgets/banner.nunjucks' %}
+</div>
+
+{% endblock %}

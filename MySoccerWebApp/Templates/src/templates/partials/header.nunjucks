@@ -1,0 +1,158 @@
+<header class="header">
+    <nav class="navbar navbar-expand-lg main-nav">
+        <div class="navbar-logo mobile">
+            <a href="#">My soccer webb app</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="navbar-collapse collapse" id="main-menu">
+            <div class="navbar-top">
+                <div class="navbar-logo desktop">
+                    <a href="#">My soccer webb app</a>
+                </div>
+                {# <ul class="navbar-top__list">
+                    <li class="navbar-top__list__item">
+                        <a class="navbar-top__list__item__link" href="register.html">Sign Up</a>
+                    </li>
+                    <li class="navbar-top__list__item">
+                        <a class="navbar-top__list__item__link" href="login.html">Login</a>
+                    </li>
+                </ul> #}
+                <ul class="navbar-top__list session-activated">
+                    <li class="navbar-top__list__item">
+                        <i class="far fa-user"></i>
+                        <a class="navbar-top__list__item__link" href="settings.html">Michiel</a>
+                    </li>
+                    <li class="navbar-top__list__item">
+                        <a class="navbar-top__list__item__link" href="index.html">Uitloggen</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-bottom">
+                <ul class="navbar-bottom__list">
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pro League</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1A</a>
+                            <a class="dropdown-item" href="#">1B</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nationaal</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Amateur</a>
+                            <a class="dropdown-item" href="#">2e Amateur A</a>
+                            <a class="dropdown-item" href="#">2e Amateur B</a>
+                            <a class="dropdown-item" href="#">3e Amateur A</a>
+                            <a class="dropdown-item" href="#">3e Amateur B</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Limburg</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Provinciaal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">2e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal B</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">3e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal C</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">4e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal D</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Antwerpen</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Provinciaal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">2e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal B</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">3e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal C</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">4e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal D</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal E</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal F</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vlaams-Brabant</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Provinciaal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">2e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal B</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">3e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal D</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">4e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal D</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal E</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal F</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal G</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oost-Vlaanderen</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Provinciaal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">2e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal C</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">3e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal D</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal E</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">4e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal D</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal E</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal F</a>
+                        </div>
+                    </li>
+                    <li class="nav-item navbar-bottom__list__item dropdown">
+                        <a class="nav-link navbar-bottom__list__item__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">West-Vlaanderen</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">1e Provinciaal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">2e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">2e Provinciaal B</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">3e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">3e Provinciaal C</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">4e Provinciaal A</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal B</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal C</a>
+                            <a class="dropdown-item" href="#">4e Provinciaal D</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,51 @@
+﻿@using MySoccerWebApp.Core.Dto.Users
+@model LoginUserDto
+
+<div class="login">
+    <section class="banner">
+        <div class="banner-image small">
+            <figure style="background-image:url('assets/images/banner-home.jpg')"></figure>
+        </div>
+    </section>
+
+    <section class="login-form">
+        <div class="container">
+            <div class="login-header">
+                <h4>@Resources.Content.Login</h4>
+            </div>
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 form-group">
+                        @Html.HiddenFor(x => x.ValidLogin)
+                        @Html.ValidationMessageFor(a => a.ValidLogin, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 form-group">
+                        @Html.LabelFor(x => x.Email, Resources.Content.EmailaddressLblRequired)
+                        @Html.TextBoxFor(x => x.Email, htmlAttributes: new { @class = "form-control", @placeholder = Resources.Content.EmailaddressLbl, @type = "email" })
+                        @Html.ValidationMessageFor(a => a.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 form-group">
+                        @Html.LabelFor(x => x.Password, Resources.Content.PasswordLblRequired)
+                        @Html.PasswordFor(x => x.Password, htmlAttributes: new { @class = "form-control validate", @placeholder = Resources.Content.PasswordLbl })
+                        @Html.ValidationMessageFor(a => a.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 form-group login-btn">
+                        <a href="#" class="password-forgotten">@Resources.Content.PasswordForgotten</a>
+                        <button type="submit" class="btn btn-primary btn-soccer-green login">@Resources.Content.LoginBtn</button>
+                    </div>
+                </div>
+            }
+            <div class="login-footer">
+                <p>@Resources.Content.NotAnAccountYet @Html.ActionLink(Resources.Content.RegisterHere, "Register", "Account", null, new { @class = "register" })</p>
+            </div>
+        </div>
+    </section>
+</div>
